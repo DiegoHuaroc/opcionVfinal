@@ -238,21 +238,7 @@ class PuntoF
             }
         }
     }
-    void busquedaPorEstado(string estado,double dist, double x, double y,int hr){
-        int tempora1=0;
-        cout<<endl;
-        cout<<"Puntos con el estado "<<estado<<" son :"<<endl;
-        for (map<string,PuntoEst>::iterator it=mapaPuntos.begin(); it!=mapaPuntos.end(); ++it)
-        {
-            if(it->second.estadoP==estado){
-                cout << "    ." <<it->first << endl;  
-                tempora1+=1;
-            }
-            
-        }
-        if(tempora1=0)cout<<"No hay puntos cercanos"<<endl;
-        
-    }
+
 
     void grabarArchivo(string nombre)
     {
